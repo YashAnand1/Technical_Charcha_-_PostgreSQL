@@ -1,7 +1,9 @@
 <center>
 
-# Behaviour-Driven Development                     
-— For Volunteered Projects —              
+<div align="center">
+  # Behaviour-Driven Development                     
+— For Volunteered Projects —  
+</div>
 
 </center>
 ____________________________________________________________________                      
