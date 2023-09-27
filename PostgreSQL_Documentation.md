@@ -49,7 +49,7 @@ On my system, the installation of Postgres was done using this [YouTube Tutorial
 - Adding Superuser privilege to the new user using **`ALTER USER yashanand WITH SUPERUSER;`**
 
 For reference, the output of the steps above can be viewed as an [image here]() and as a short video below:              
-[![IMAGE_ALT](https://img.youtube.com/vi/GFGImSdJNWk/maxresdefault.jpg)](https://www.youtube.com/watch?v=GFGImSdJNWk)
+[![IMAGE_ALT](https://img.youtube.com/vi/GFGImSdJNWk/hqdefault.jpg)](https://www.youtube.com/watch?v=GFGImSdJNWk)
 
 
 --------------------------------
