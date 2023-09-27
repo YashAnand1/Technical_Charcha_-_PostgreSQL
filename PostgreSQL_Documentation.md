@@ -4,12 +4,12 @@
 — For Volunteered Projects —              
 
 </center>
-____________________________________________________________________
+____________________________________________________________________                      
 <center>INDEX   
-Understanding Behaviour-Driven Development               Page 01
-BDD: Assisting Varad Sir                                 Page 02
-BDD: Automatic Attendance                                Page 04</center>                     
-____________________________________________________________________                         
+Understanding Behaviour-Driven Development               Page 01                  
+BDD: Assisting Varad Sir                                 Page 02                  
+BDD: Automatic Attendance                                Page 04</center>                                       
+____________________________________________________________________                                           
 
 <center>
 
