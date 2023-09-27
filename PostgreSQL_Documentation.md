@@ -2,8 +2,8 @@
 
 </div>
 <p align="center">
-Behaviour-Driven Development                     
--
+Behaviour-Driven Development                                              
+----             
 — For Volunteered Projects —  
 </p>
 
