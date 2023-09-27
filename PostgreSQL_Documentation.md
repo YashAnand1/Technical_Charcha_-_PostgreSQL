@@ -11,8 +11,8 @@ ________________________________________________________________________________
 
 Understanding & Setting-Up PostgreSQL                     
 PostgreSQL: Q&A                       
-TASK I: Create DB & Sample Table                                                
-TASK II: Retrieve Table Data Using SQL Queries                          
+TASK I - Database & Sample Table                        
+TASK II - Retrieve Table Data Using SQL Queries                          
 
 <center>      
 
@@ -63,7 +63,7 @@ The steps followed for the setting-up Postgres were as follows:
     ```
   Output:
   ```
-- Creating user with **`CREATE USER yashanand WITH PASSWORD 'a';`**
+- Creating user with **`CREATE USER yashanand WITH PASSWORD 'a';`** and listing all users with **`\du`**
     ```
   Output:
   ```
@@ -99,4 +99,23 @@ The answers to the 'True or False' questions asked are as follows:
 | 09 | Data types in a database define the kind of values that can be stored in a column, such as integers, text, or dates. | True |
 | 10 | Foreign keys are used to establish relationships between tables by referencing the primary key of another table. | True |
 
---------------------------------------------------------------
+--------------------------------
+<center>
+
+## TASK I - Database & Sample Table 
+
+</center>
+
+|  |
+|----------------| 
+| Task 1: Create a new PostgreSQL database and set up a sample table.  |
+| 1.1. Create a new database named "company."  |
+| 1.2. Create a table named "employees" with columns for ID, first name, last name, and job title.   | 
+| 1.3. Insert at least three sample employee records into the table.  |
+
+As per the first task, a Database called "company" was to be created with a table for "employees". This table was to be then populated with sample data according to the following headers:
+- `id`
+- `first_name`
+- `last_name`
+- `job_title`
+
