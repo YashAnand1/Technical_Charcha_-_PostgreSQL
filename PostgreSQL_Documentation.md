@@ -1,6 +1,6 @@
 <center>
-# Behaviour-Driven Development     
-— For Volunteered Projects —  
+# Behaviour-Driven Development       
+— For Volunteered Projects —    
 </center>
 _____________________________________________________________________________________                        
 <center>INDEX          
