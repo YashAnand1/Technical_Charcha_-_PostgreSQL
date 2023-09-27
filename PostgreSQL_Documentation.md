@@ -1,8 +1,9 @@
 <center>
 
 </div>
-<p align="justify">
-# Behaviour-Driven Development                     
+<p align="center">
+Behaviour-Driven Development                     
+-
 — For Volunteered Projects —  
 </p>
 
