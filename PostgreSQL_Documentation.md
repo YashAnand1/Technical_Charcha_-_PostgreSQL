@@ -1,19 +1,13 @@
 <center>
-
-</div>
-<p align="center">
-Behaviour-Driven Development                                              
-----             
+# Behaviour-Driven Development     
 — For Volunteered Projects —  
-</p>
-
 </center>
-____________________________________________________________________                      
+_____________________________________________________________________________________                      
 <center>INDEX   
 Understanding Behaviour-Driven Development               Page 01                  
 BDD: Assisting Varad Sir                                 Page 02                  
 BDD: Automatic Attendance                                Page 04</center>                                       
-____________________________________________________________________                                           
+_____________________________________________________________________________________                                           
 
 <center>
 
