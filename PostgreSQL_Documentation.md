@@ -1,9 +1,10 @@
 <center>
 
-<div align="center">
-  # Behaviour-Driven Development                     
-— For Volunteered Projects —  
 </div>
+<p align="justify">
+# Behaviour-Driven Development                     
+— For Volunteered Projects —  
+</p>
 
 </center>
 ____________________________________________________________________                      
