@@ -1,13 +1,14 @@
-<center>
+<div align="center">
 
-## Documentation: PostgreSQL Tasks        
+# Documentation: PostgreSQL Tasks        
 ### — Database, Tables & Queries —    
 
 _____________________________________________________________________________________                        
 
-## INCLUDED TOPICS  
+#### <u>INDEX</u>  
 
-</center>  
+</div>
+<center>
 
 Understanding & Setting-Up PostgreSQL                     
 PostgreSQL: Q&A                       
