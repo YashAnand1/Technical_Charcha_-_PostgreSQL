@@ -30,9 +30,12 @@ ________________________________________________________________________________
 
 PostgreSQL or Postgres is a relational database management system (RDBMS). The data is organised here into tables with rows and columns. Additionally, the storing and retrieving of data is done using SQL on the basis of the relation between tables.
 
+<div align="center">
 <center>
 
 ![image](https://ashnik-images.s3.amazonaws.com/prod/wp-content/uploads/2021/02/20050444/Postgresql-w-400x106.png)
+
+</div>
 </center>
 
 Some of the main features of Postgre include:   
