@@ -38,7 +38,7 @@ PostgreSQL or Postgres is a relational database management system (RDBMS). The d
 </div>
 </center>
 
-Some of the main features of Postgre include:   
+Some of the main features of Postgres include:   
 - Storage & management of structured data 
 - Efficient retrieval capabilities
 - SQL for interacting with DB 
@@ -48,7 +48,7 @@ On my system, the installation of Postgres was done using this [YouTube Tutorial
 [![IMAGE_ALT](https://img.youtube.com/vi/-LwI4HMR_Eg/maxresdefault.jpg)](https://www.youtube.com/watch?v=-LwI4HMR_Eg)
 
 
-The steps followed for the setting-up Postgres were as follows:   
+The steps followed for setting-up Postgres were as follows:   
 - Installing PostgresSQL & additional utilities using **`sudo apt-get install postgresql postgresql-contrib`**
 
   **Output:**
