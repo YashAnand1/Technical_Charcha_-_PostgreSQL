@@ -52,38 +52,62 @@ The steps followed for the setting-up Postgres were as follows:
 - Installing PostgresSQL & additional utilities using **`sudo apt-get install postgresql postgresql-contrib`**
 
   **Output:**
+<div align="center">
 
   ![image](https://i.imgur.com/wjfuUE2.png)
+
+</div>
 
   
 - Checking the status of Postgres using **`service postgresql status`**
   
   **Output:**
+<div align="center">
+
 
   ![image](https://i.imgur.com/PT63rvh.png)
+
+</div>
 
 - Entering Postgres using **`sudo su postgres`**
 
   Output:      
+<div align="center">
+
+
   ![image](https://i.imgur.com/BOhq5Yl.png)
+
+</div>
+
   
 - Launching PSQL terminal for interacting with the database using **`psql`**
 
   Output:        
+<div align="center">
+
+
   ![image](https://i.imgur.com/37B5gkI.png)
+
+</div>
 
 
 - Creating user with **`CREATE USER yashanand WITH PASSWORD 'a';`** and listing all users with **`\du`**
 
   Output:  
+<div align="center">
   
   ![image](https://i.imgur.com/NHEH3jw.png)
+
+</div>
 
 - Adding Superuser privilege to the new user using **`ALTER USER yashanand WITH SUPERUSER;`**
  
   Output:   
+<div align="center">
 
   ![image](https://i.imgur.com/MKmzGyc.png)
+
+</div>
 
 
 --------------------------------
