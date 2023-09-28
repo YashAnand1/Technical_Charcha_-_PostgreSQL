@@ -12,7 +12,7 @@ ________________________________________________________________________________
 Understanding & Setting-Up PostgreSQL                     
 PostgreSQL: Q&A                       
 TASK I - Database & Sample Table                        
-TASK II - Retrieve Table Data Using SQL Queries                          
+TASK II - Table Data Retrieval & SQL Queries                          
 
 <center>      
 
@@ -40,9 +40,8 @@ Some of the main features of Postgre include:
 - SQL for interacting with DB 
 
 On my system, the installation of Postgres was done using this [YouTube Tutorial](https://www.youtube.com/watch?v=-LwI4HMR_Eg). For reference, I have created a demonstration of the steps utilised for installing and setting-up Postgres locally on my system, as a video below:
-<center>
 
-</center>
+[![IMAGE_ALT](https://img.youtube.com/vi/-LwI4HMR_Eg/maxresdefault.jpg)](https://www.youtube.com/watch?v=-LwI4HMR_Eg)
 
 
 The steps followed for the setting-up Postgres were as follows: 
@@ -71,9 +70,6 @@ The steps followed for the setting-up Postgres were as follows:
    ```
   Output:
   ```
-
-
-
 
 --------------------------------
 <center>
@@ -106,16 +102,118 @@ The answers to the 'True or False' questions asked are as follows:
 
 </center>
 
-|  |
+
+| **Task: Create a new PostgreSQL database and set up a sample table.**  |
 |----------------| 
-| Task 1: Create a new PostgreSQL database and set up a sample table.  |
 | 1.1. Create a new database named "company."  |
 | 1.2. Create a table named "employees" with columns for ID, first name, last name, and job title.   | 
 | 1.3. Insert at least three sample employee records into the table.  |
 
-As per the first task, a Database called "company" was to be created with a table for "employees". This table was to be then populated with sample data according to the following headers:
-- `id`
-- `first_name`
-- `last_name`
-- `job_title`
+As per the first task, it was required to have Postgres installed and set-up on my system. Therefore, I utilised the steps mentioned in the first section for installing and setting-up Postgres. Through these steps, I was able to successfully create a new user using the PSQL interactive terminal and was ready to get started with the tasks. For reference, the demonstration of this task can also be viewed in the video provided below:    
+
+[![IMAGE_ALT](https://img.youtube.com/vi/-LwI4HMR_Eg/maxresdefault.jpg)](https://www.youtube.com/watch?v=-LwI4HMR_Eg)
+
+
+  
+**Task 1.1. Create a new database named "company."**  
+For creating a database, I referred to this [YouTube Tutorial](https://www.youtube.com/watch?v=-LwI4HMR_Eg) and [this article](https://www.tutorialspoint.com/postgresql/postgresql_create_database.htm) by Tutorial's Point. Inside the PSQL, I wrote the following SQL query for creating a database called "company":
+```
+CREATE DATABASE company;
+``` 
+   ```
+  Output:
+  ```
+In this query, I created a new database without specifying the owner. If I was to specify the owner, the query would have been `CREATE DATABASE company WITH OWNER yashanand;`. Regardless, a database was still created with `postgres` as its default owner. It should be noted that it is important to add `;` at the end of a query for its termination.
+
+In order to ensure that the database had been created, I utilised the `\l` command for listing the stored databases and the output  as follows:   
+![image]()
+
+**Task 1.2. Create a table named "employees" with columns for ID, first name, last name, and job title.**  
+In order to create a table, I first entered into the "company" database using `\c company`. As it was not specified in the task, I did not create a new schema by writing a query such as `CREATE SCHEMA companyschema;` and allowed essentially allowed the schema to be set as the default 'Public' schema.
+
+For creating a table called "employees" inside the "company" database, with headers for "id", "first_name", "last_name" and "job title", I wrote the following query:
+```
+CREATE TABLE employees(
+id int PRIMARY KEY,
+first_name varchar,
+last_name varchar,
+job title varchar
+);
+```
+   ```
+  Output:
+  ```
+
+The reasoning behind declaring "id" as int type was that the values related to it were only going to be in integer values. Similarly, the rest of the headers were declared as varchar in order to store variable characters upto 255 bytes as values.
+
+**1.3. Insert at least three sample employee records into the table.**   
+The three sample records that I created for inserting into the table were added to their specified headers by writing the following query:
+```
+INSERT INTO employees (id, first_name, last_name, job_title)
+VALUES
+(543, 'Yash', 'Anand', 'Contractor'),
+(876, 'Puneet', 'Gupta', 'Employee'),
+(234, 'Ankur', 'Kumar' , 'Intern');
+```  
+   ```
+  Output:
+  ```
+As explained in the previous sub-task, the first column for "id" included integers but the "first_name", "last_name" and "job_title" were created for storing varchar data types and therefore, consisted of variable characters.
+____
+**Conclusion**: After performing this first task, I was able to successfully create a database called "company" and gain a better understanding of what databases are and how they work. Inside that database, I also created a table called "employees" and added 3 sample records to it.
+
+--------------------------------
+<center>
+
+## TASK II - Table Data Retrieval & SQL Queries 
+
+</center>
+
+
+| **Task: Write SQL queries to retrieve data from the "employees" table.**  |
+|----------------| 
+| 2.1. Retrieve all records from the "employees" table.  |
+| 2.2. Retrieve only the first and last names of all employees. | 
+| 2.3. Sort the employees by last name in alphabetical order. |
+
+In this task, SQL queries were to be utilised for interacting with the "employees" table that was created inside the "company" database. Inside the "company" database, that I had entered into using `\c company`, I worked on performing the sub-tasks provided below:  
+
+**Task  2.1. Retrieve all records from the "employees" table.**  
+After having added sample records to the "employees" table, I retrieved all of the records from the table by running the following query:
+```
+SELECT * FROM employees
+```
+   ```
+  Output:
+  ```
+In this query, `SELECT *` is used for the retrieval of all records from a specific table of "employees" using `FROM employees` in the query. The `(3 rows)` under the displayed records shows that the displayed table consists of 3 rows.
+
+**Task  2.2. Retrieve only the first and last names of all employees.**  
+In order to display selected columns of 'first_name' and 'last_name' from the "employees" table, I ran the following query for the display of specific columns: 
+```
+SELECT first_name, last_name FROM employees;
+```
+   ```
+  Output:
+  ```
+Unlike the previous query where we were running `SELECT *` for retrieving all records, we used `SELECT first_name, last_name` for retrieving specific records. Similar to the previous query, `FROM employees` is used in the query to specify which table we want to retrieve records from. The `(3 rows)` displayed under the output again to signify the number of rows in the displayed table.
+
+
+**Task  2.3. Sort the employees by last name in alphabetical order.**  
+After having retrieved all of the records as well as specifc records from the "employees" table, the records retrieval was to be done this time by sorting employees by their `last_name` in alphabetical order. In order to perform this task, I wrote the following query:
+```
+SELECT * FROM employees ORDER BY last_name;
+```
+   ```
+  Output:
+  ```
+As mentioned earlier, `SELECT *` is used in the query for retrieving all records and `FROM employees` is utilised for specifying the table which includes the records. The `ORDER BY last_name` part of the query helped sorting the `last_name` column alphabetically. By default, the sorting is done in ascending order but it can be changed to descending order by running the following query:
+ ```
+SELECT * FROM employees ORDER BY last_name DESC;
+```
+   ```
+  Output:
+  ```
+-----------------------------------------------
+
 
