@@ -172,9 +172,9 @@ In order to ensure that the database had been created, I utilised the `\l` comma
 </div>
 
 ## **Task 1.2. Create a table named "employees" with columns for ID, first name, last name, and job title.**  
-In order to create a table, I first entered into the "company" database using `\c company`. As it was not specified in the task, I did not create a new schema by writing a query such as `CREATE SCHEMA companyschema;` and allowed essentially allowed the schema to be set as the default 'Public' schema.
+In order to create a table, I first entered into the "company" database using `\c company`. As it was not specified in the task, I did not create a new schema by writing a query such as `CREATE SCHEMA companyschema;` and essentially allowed the schema to be set as the default 'Public' schema.
 
-For creating a table called "employees" inside the "company" database, with headers for "id", "first_name", "last_name" and "job title", I wrote the following query:
+For creating a table called "employees" inside the "company" database, with "id", "first_name", "last_name" and "job title" as headers, I wrote the following query:
 ```
 CREATE TABLE employees(
 id int PRIMARY KEY,
@@ -192,7 +192,7 @@ job title varchar
 
 </div>
 
-The reasoning behind declaring "id" as int type was that the values related to it were only going to be in integer values. Similarly, the rest of the headers were declared as varchar in order to store variable characters upto 255 bytes as values.
+The reasoning behind declaring "id" as an int type was that the values related to it were only going to be in integer values. Similarly, the rest of the headers were declared as varchar in order to store variable characters upto 255 bytes as values.
 
 ## **1.3. Insert at least three sample employee records into the table.**   
 The three sample records that I created for inserting into the table were added to their specified headers by writing the following query:
@@ -218,7 +218,7 @@ ____
 
 <center>
 
-## TASK II - Table Data Retrieval & SQL Queries 
+## TASK II - Data Retrieval From Table & SQL Queries 
 
 </center>
 
